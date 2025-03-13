@@ -46,8 +46,12 @@
         }
 
         .option-card {
-            flex: 1;
-            min-width: 300px;
+            flex: none;
+            /* Rimuovere la proprietà flex che le rendeva affiancate */
+            width: 100%;
+            /* Occupare tutta la larghezza disponibile */
+            min-width: auto;
+            /* Rimuovere la larghezza minima */
             background-color: white;
             border-radius: 8px;
             overflow: hidden;
